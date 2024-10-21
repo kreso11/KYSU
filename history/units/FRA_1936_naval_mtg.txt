@@ -1,0 +1,13 @@
+﻿
+units= {
+
+	##### NAVAL UNITS #####
+	### METRPOLITAN FRANCE ###
+	fleet = {			
+	}
+
+} 
+
+instant_effect = {
+	
+}

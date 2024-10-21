@@ -1,0 +1,15 @@
+add_namespace = hotjoin_event
+country_event = {
+    id = hotjoin_event.1
+    title = hotjoin_event.1.t
+    desc = hotjoin_event.1.d
+    picture = GFX_report_event_generic_newspaper
+
+    major = yes
+
+    is_triggered_only = yes
+
+    option = {
+        name = hotjoin_event.1.a
+    }
+}
