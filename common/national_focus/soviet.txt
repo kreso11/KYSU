@@ -1171,7 +1171,8 @@ focus_tree = {
 			add_to_variable = { SOV_soviet_economy_political_power_gain = 0.20 tooltip = political_power_gain_tt }
 			add_to_variable = { SOV_soviet_economy_production_speed_arms_factory_factor = -0.05 tooltip = production_speed_arms_factory_factor_tt }
 			add_to_variable = { SOV_soviet_economy_production_speed_industrial_complex_factor = -0.15 tooltip = production_speed_industrial_complex_factor_tt }
-			add_to_variable = { SOV_soviet_economy_production_speed_bunker_factor = 0.25 tooltip = production_speed_bunker_factor_tt }
+			add_to_variable = { SOV_soviet_economy_production_speed_bunker_factor = -0.25 tooltip = production_speed_bunker_factor_tt }
+			add_to_variable = { SOV_soviet_economy_production_speed_anti_air_building_factor = -0.25 tooltip = production_speed_anti_air_building_factor_tt }
 			if = {
 				limit = {
 					date < 1937.8.1
@@ -1214,6 +1215,7 @@ focus_tree = {
 			add_to_variable = { SOV_soviet_economy_political_power_gain = -0.10 tooltip = political_power_gain_tt }
 			add_to_variable = { SOV_soviet_economy_production_speed_arms_factory_factor = 0.15 tooltip = production_speed_arms_factory_factor_tt }
 			add_to_variable = { SOV_soviet_economy_production_speed_bunker_factor = -0.25 tooltip = production_speed_bunker_factor_tt }
+			add_to_variable = { SOV_soviet_economy_production_speed_anti_air_building_factor = -0.25 tooltip = production_speed_anti_air_building_factor_tt }
 			set_variable = { SOV_3_5_plan_duration = 1825 tooltip = modification_length_tt }
 			hidden_effect = {
 				SOV = {
@@ -8727,8 +8729,12 @@ focus_tree = {
 
 	focus = {
 		id = SOV_fighter_effort
-
 		icon = GFX_focus_SOV_aviation_cult
+		available = {
+			OR = {
+				date > 1939.1.1
+			}
+		}
 		prerequisite = { focus = SOV_transpolar_flights }
 		x = -4
 		y = 1
@@ -8742,6 +8748,7 @@ focus_tree = {
 		search_filters = {}
 
 		completion_reward = {
+			air_experience = 75
 			add_tech_bonus = {
 				name = fighter_bonus
 				bonus = 0.75

@@ -2743,56 +2743,56 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = CAN_aluminium_company_of_canada
-		icon = GFX_goal_generic_positive_trade_relations 
-		prerequisite = { focus = CAN_supply_the_empire }
-		x = -1
-		y = 1
-		relative_position_id = CAN_supply_the_empire
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 25
-		}
-
-		available = {
-			controls_state = 682
-			controls_state = 466
-			controls_state = 468
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		completion_reward = {
-			682 = {
-				add_resource = {
-					type = aluminium
-					amount = 200
-				}
-			}
-			466 = {
-				add_resource = {
-					type = aluminium
-					amount = 150
-				}
-			}
-			468 = {
-				add_resource = {
-					type = aluminium
-					amount = 150
-				}
-			}
-		}
-	}
+	#focus = {
+	#	id = CAN_aluminium_company_of_canada
+	#	icon = GFX_goal_generic_positive_trade_relations 
+	#	prerequisite = { focus = CAN_supply_the_empire }
+	#	x = -1
+	#	y = 1
+	#	relative_position_id = CAN_supply_the_empire
+	#
+	#	cost = 5
+	#
+	#	ai_will_do = {
+	#		factor = 25
+	#	}
+	#
+	#	available = {
+	#		controls_state = 682
+	#		controls_state = 466
+	#		controls_state = 468
+	#	}
+	#	
+	#	bypass = {
+	#
+	#	}
+	#
+	#	cancel_if_invalid = yes
+	#	continue_if_invalid = no
+	#	available_if_capitulated = yes
+	#	search_filters = { FOCUS_FILTER_INDUSTRY }
+	#
+	#	completion_reward = {
+	#		682 = {
+	#			add_resource = {
+	#				type = aluminium
+	#				amount = 200
+	#			}
+	#		}
+	#		466 = {
+	#			add_resource = {
+	#				type = aluminium
+	#				amount = 150
+	#			}
+	#		}
+	#		468 = {
+	#			add_resource = {
+	#				type = aluminium
+	#				amount = 150
+	#			}
+	#		}
+	#	}
+	#}
 
 	focus = {
 		id = CAN_turner_valley_oilfield

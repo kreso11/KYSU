@@ -1,6 +1,22 @@
 ideas = {
 
 	country = {
+		
+		### KRESO
+		GER_prepare_barb_railway = {			
+			
+			allowed = {
+				original_tag = "GER"
+			}
+			
+			removal_cost = -1
+			
+			picture = generic_economic_increase
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+			}
+		}
 
 		### LW 
 		GER_germaniawerft = {

@@ -1384,25 +1384,15 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = GER_grosraumwirtschaft
-		cost = 2
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
 
-		available = {
-			NOT = { has_war_with = HUN }
-		}
-
-		bypass = {
-			HUN = {
-				exists = no	
-			}
-		}
-		
 		completion_reward = {
 			add_resource = {
 				type = aluminium
-				amount = 400
+				amount = 900
 				state = 43
 			}
 		}
@@ -1420,16 +1410,6 @@ focus_tree = {
 			factor = 1
 		}
 
-		available = {
-			NOT = { has_war_with = ROM }
-		}
-
-		bypass = {
-			ROM = {
-				exists = no
-			}
-		}
-		
 		completion_reward = {
 			add_resource = {
 				type = oil
@@ -2615,6 +2595,9 @@ focus_tree = {
 
 		completion_reward = {
 			hidden_effect = {
+				every_country = {
+					scoped_sound_effect = "sp_ger_anschsluss_cooked"
+				}
 				country_event = { id = germany.503 days = 1 }
 			}
 			effect_tooltip = {
@@ -3449,6 +3432,23 @@ focus_tree = {
 			}
 		}	
 		completion_reward = {
+			add_timed_idea = { idea = GER_prepare_barb_railway days = 120 }
+			build_railway = {
+				path = { 11444 3312 6282 6334 9334 9361 11372 11343 9263 362 3380 6402 6332 11265 3288}
+				level = 5
+			}
+			build_railway = {
+				path = { 11505 9496 3572 6595 552 9570 6462 9511 11467 6464}
+				level = 5
+			}
+			build_railway = {
+				path = { 6464 9567 9551 11539 581 3550 3581 6586 11691 3548 746 9704 727 11689 744 3741}
+				level = 5
+			}
+			build_railway = {
+				path = { 6464 13205 9427 11430 6416 3458 3559 11399}
+				level = 5
+			}
 			98 = {
 				add_building_construction = {
 					type = infrastructure
@@ -3457,7 +3457,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = air_base
-					level = 2
+					level = 10
 					instant_build = yes
 				}
 			}
@@ -3469,7 +3469,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = air_base
-					level = 2
+					level = 10
 					instant_build = yes
 				}
 			}
@@ -3481,7 +3481,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = air_base
-					level = 2
+					level = 10
 					instant_build = yes
 				}
 			}
@@ -3493,7 +3493,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = air_base
-					level = 2
+					level = 10
 					instant_build = yes
 				}
 			}
@@ -3505,7 +3505,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = air_base
-					level = 2
+					level = 10
 					instant_build = yes
 				}
 			}
@@ -3517,7 +3517,7 @@ focus_tree = {
 				}
 				add_building_construction = {
 					type = air_base
-					level = 2
+					level = 10
 					instant_build = yes
 				}
 			}
@@ -4611,21 +4611,6 @@ focus_tree = {
 			is_puppet = no
 			NOT = { has_war_with = CZE }
 			has_completed_focus = GER_first_vienna_award
-		}
-
-		bypass = {
-			OR = {
-				CZE = { is_puppet_of = GER }
-				CZE = { is_in_faction_with = GER }
-				has_war_with = CZE
-				NOT = { country_exists = CZE }
-				any_other_country = {
-					is_in_faction_with = GER
-					CZE = {
-						is_puppet_of = PREV
-					}
-				}
-			}
 		}
 
 		x = 3
@@ -8793,7 +8778,7 @@ focus_tree = {
 		}
 		x = -5
 		y = 0
-		cost = 2
+		cost = 0
 
 		available_if_capitulated = yes
 
@@ -8851,7 +8836,7 @@ focus_tree = {
 		prerequisite = { focus = GER_japan_friend }
 		x = 0
 		y = 1
-		cost = 2
+		cost = 0
 		relative_position_id = GER_japan_friend
 
 		available_if_capitulated = yes

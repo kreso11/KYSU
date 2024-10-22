@@ -919,9 +919,9 @@ SOV_air_nerf_dynamic_modifier_kreso = { #NATIONAL SPIRIT
 	icon = GFX_idea_generic_air_research
 
 	#INITIAL
-	air_attack_factor = SOV_biplane_airforce_air_attack_factor #-0.1
-	air_defence_factor = SOV_biplane_airforce_air_defence_factor #-0.1
-	air_agility_factor = SOV_biplane_airforce_air_agility_factor #-0.1
+	air_attack_factor = SOV_biplane_airforce_air_attack_factor #-0.10
+	air_defence_factor = SOV_biplane_airforce_air_defence_factor #-0.10
+	air_agility_factor = SOV_biplane_airforce_air_agility_factor #-0.10
 
 	#FUTURE
 	#offensive uranus #-0.05 sva 3
