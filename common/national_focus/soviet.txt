@@ -1767,6 +1767,14 @@ focus_tree = {
 					news_event = generic.36
 				}
 			}
+			hidden_effect = {
+				every_country = {
+					scoped_sound_effect = "sp_sov_stalin_cooked"
+				}
+				every_country = {
+					set_variable = { var = super_event value = 13 }
+				}
+			}
 		}
 	}
 
@@ -1843,6 +1851,11 @@ focus_tree = {
 					news_event = generic.37
 				}
 			}
+			hidden_effect = {
+				every_country = {
+					scoped_sound_effect = "sp_sov_anthem"
+				}
+			}
 		}
 	}
 
@@ -1880,6 +1893,11 @@ focus_tree = {
 		cost = 1
 		
 		completion_reward = {
+			hidden_effect = {
+				every_country = {
+					scoped_sound_effect = "sp_sov_bargration"
+				}
+			}
 			set_variable = { SOV_biplane_airforce_air_attack_factor = 0 }
 			set_variable = { SOV_biplane_airforce_air_defence_factor = 0 }
 			set_variable = { SOV_biplane_airforce_air_agility_factor = 0 }

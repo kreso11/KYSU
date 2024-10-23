@@ -2389,6 +2389,21 @@ country_event = {
 }
 
 country_event = {
+	id = generic.144
+
+	is_triggered_only = yes
+	major = yes
+    hidden = yes
+
+	immediate = {
+		every_country = {
+			scoped_sound_effect = "sp_jap_china"
+		}
+	}
+}
+
+
+country_event = {
 	id = generic.44 # end of plan in x days
 	title = "x"
 	desc = "x"

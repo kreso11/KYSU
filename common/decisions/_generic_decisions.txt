@@ -356,25 +356,6 @@ host_decisions = {
                 amount = 40
                 state = 876
             }
-				every_state = {
-					limit = {
-						OR = {
-							state = 287
-							state = 329
-							state = 330
-							state = 617
-							state = 618
-							state = 619
-							state = 759
-							state = 760
-							state = 817
-							state = 818
-							state = 819
-							state = 820
-						}
-					}
-					add_dynamic_modifier = { modifier = no_factories_mon }
-				}
 			}
 		}
 	}

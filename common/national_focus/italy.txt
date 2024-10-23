@@ -2211,6 +2211,11 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_WAR_SUPPORT}
 
 		completion_reward = {
+			hidden_effect = {
+				every_country = {
+					scoped_sound_effect = "sp_ita_ethiopia"
+				}
+			}
 			add_stability = 0.25
 			663 = {
 				set_building_level = {
@@ -2402,6 +2407,11 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
+			hidden_effect = {
+				every_country = {
+					scoped_sound_effect = "sp_ita_waronallies"
+				}
+			}
 			# remove_ideas = ITA_neutrality_idea
 			hidden_effect = {
 				swap_ideas = {

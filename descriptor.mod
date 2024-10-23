@@ -1,4 +1,4 @@
-version="1.14.9"
+version="1.14.10"
 tags={
 	"Balance"
 	"Events"
@@ -7,7 +7,7 @@ tags={
 	"National Focuses"
 	"Technologies"
 }
-name="Florian Friends United (FFU)"
+name="KYSU"
 picture="thumbnail.png"
 replace_path="common/ai_equipment"
 replace_path="common/ai_strategy"

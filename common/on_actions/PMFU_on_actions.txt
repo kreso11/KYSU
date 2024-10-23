@@ -1,4 +1,16 @@
 on_actions = {
+
+	### BANZAI 1.12.37
+    on_startup = {
+        effect = {
+			GER = {
+					country_event = { id = generic.144
+					days = 408 # cope to attache decision
+				} 
+			}
+        }
+    }
+
 	# POLAND GUARANTEE
 	on_declare_war = {
 		effect = {

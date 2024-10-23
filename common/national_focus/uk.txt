@@ -4016,6 +4016,11 @@ focus_tree = {
 
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 		completion_reward = {
+			hidden_effect = {
+				every_country = {
+					scoped_sound_effect = "sp_usa_democracy_cooked"
+				}
+			}
 			add_ideas = ENG_destroyers_for_bases1
 			USA = {
 				custom_effect_tooltip = needs_approval
@@ -4302,6 +4307,11 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
+			hidden_effect = {
+				every_country = {
+					scoped_sound_effect = "sp_dday_cooked"
+				}
+			}
 			hidden_effect = { 
 				every_country = {
 					news_event = generic.33

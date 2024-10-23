@@ -2907,8 +2907,14 @@ focus_tree = {
 			}
 		}	
 		completion_reward = { 
-
-
+			hidden_effect = {
+				every_country = {
+					scoped_sound_effect = "sp_ger_danzig_cooked"
+				}
+				every_country = {
+					set_variable = { var = super_event value = 8 }
+				}
+			}
 			add_named_threat = { threat = 5 name = GER_danzig_or_war }
 			if = {
 				limit = {
@@ -3596,6 +3602,14 @@ focus_tree = {
 		continue_if_invalid = yes
 		cost = 2
 		completion_reward = {
+			hidden_effect = {
+				every_country = {
+					scoped_sound_effect = "sp_ger_barb_SS"
+				}
+				every_country = {
+					set_variable = { var = super_event value = 9 }
+				}
+			}
 			add_advisor_role = {
 				character = GER_walter_model
 				activate = yes
@@ -3688,6 +3702,11 @@ focus_tree = {
 					news_event = generic.34
 				}
 			}
+			hidden_effect = {
+				every_country = {
+					scoped_sound_effect = "sp_ger_georges_song"
+				}
+			}
 		}
 	}
 
@@ -3737,6 +3756,11 @@ focus_tree = {
 					news_event = generic.35
 				}
 			}
+			hidden_effect = {
+				every_country = {
+					scoped_sound_effect = "sp_ger_zitadelle"
+				}
+			}
 		}
 	}
 
@@ -3784,6 +3808,11 @@ focus_tree = {
 			hidden_effect = {
 				every_country = {
 					news_event = generic.35
+				}
+			}
+			hidden_effect = {
+				every_country = {
+					scoped_sound_effect = "sp_ger_mobilization"
 				}
 			}
 		}
@@ -4398,7 +4427,11 @@ focus_tree = {
 			factor = 10
 		}	
 		completion_reward = {
-			
+			hidden_effect = {
+				every_country = {
+					scoped_sound_effect = "sp_ger_sudeten_cooked"
+				}
+			}
 			if =  {
 				limit = {
 					OR = {
@@ -5195,6 +5228,11 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			hidden_effect = {
+				every_country = {
+					scoped_sound_effect = "sp_finest_hour_cooked"
+				}
+			}
 			GER = {
 				set_cosmetic_tag = GER_greater_german_reich
 			}
@@ -6398,6 +6436,11 @@ focus_tree = {
 		cost = 5
 		
 		completion_reward = {
+			hidden_effect = {
+				every_country = {
+					scoped_sound_effect = "sp_ger_goebbels"
+				}
+			}
 			add_political_power = 200
 			custom_effect_tooltip = unlock_propaganda_campaign_tt
 			unlock_decision_tooltip = GER_plow_prop
