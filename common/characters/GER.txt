@@ -1070,7 +1070,7 @@ characters={
 		name="GER_hjalmar_schacht"
 		portraits={
 			army={
-				small="gfx/interface/ideas/small_alzimax.dds" #TO-DO: Zamjeniti s Alzimaxom, staviti portrete u gfx/interface/ideas!
+				small="gfx/interface/ideas/small_alzimax.dds"
 			}
 		}
 		advisor={
