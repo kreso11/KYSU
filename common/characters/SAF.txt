@@ -91,7 +91,7 @@ characters={
 		name="George Edwin Brink"
 		portraits={
 			army={
-				small="GFX_SAF_george_edwin_brink_small"
+				small="gfx/interface/ideas/small_lau_1.dds"
 			}
 			army={
 				large="GFX_SAF_george_edwin_brink"

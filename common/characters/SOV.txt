@@ -2048,7 +2048,7 @@ SOV_semyon_timoshenko={
 		  name = SOV_mikhail_kalinin
 		  portraits = {
 			  army = {
-				  small = "GFX_idea_mikhail_kalinin"
+				  small = "gfx/interface/ideas/small_ivanov.dds"
 			  }
 		  }
 		  allowed_civil_war = {

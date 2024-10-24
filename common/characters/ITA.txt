@@ -833,7 +833,7 @@ characters={
 		name="ITA_mario_roatta"
 		portraits={
 			army={
-				small="GFX_idea_generic_navy_europe_3"
+				small="gfx/interface/ideas/small_kreso.dds"
 			}
 		}
 		advisor={

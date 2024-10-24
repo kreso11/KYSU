@@ -105,7 +105,7 @@ characters={
 		}
 		portraits={
 			army={
-				small="GFX_idea_generic_army_europe_2"
+				small="gfx/interface/ideas/small_fabijanic_1.dds"
 			}
 			army={
 				large="GFX_Portrait_romania_gheorghe_avramescu"
