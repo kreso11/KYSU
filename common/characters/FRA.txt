@@ -3,7 +3,7 @@ characters={
 		name=FRA_pierre_laval
 		portraits={
 			civilian={
-				large="GFX_portrait_fra_pierre_laval"
+				large="gfx/interface/ideas/fabe_velika.dds"
 			}
 		}
 		country_leader={
