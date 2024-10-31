@@ -7,6 +7,10 @@ sound = {
 	file = "ita_speech/sp_ita_waronallies.wav"
 }
 sound = {
+	name = "sp_ita_ante_jaci"
+	file = "ita_speech/sp_ita_ante_jaci.wav"
+}
+sound = {
 	name = "sp_ita_surrender"
 	file = "ita_speech/sp_ita_surrender.wav"
 }

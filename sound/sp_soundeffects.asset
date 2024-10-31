@@ -4,6 +4,13 @@
 ##################
 
 soundeffect = {
+	name = "sp_ita_ante_jaci"
+	sounds = {
+		sound = sp_ita_ante_jaci
+	}
+	volume = 1.0
+}
+soundeffect = {
 	name = "sp_ita_waronallies"
 	sounds = {
 		sound = sp_ita_waronallies

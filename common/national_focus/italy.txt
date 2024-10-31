@@ -2731,6 +2731,11 @@ focus_tree = {
 		}
 		
 		completion_reward = {
+			hidden_effect = {
+				every_country = {
+					scoped_sound_effect = "sp_ita_ante_jaci"
+				}
+			}
 			# 104 = {
 			# 	add_core_of = CRO
 			# }

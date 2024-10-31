@@ -2627,6 +2627,32 @@ focus_tree = {
 	}
 
 	focus = {
+		id = CAN_adrian_slave
+		icon = GFX_focus_eng_the_sun_never_sets
+		prerequisite = { focus = CAN_montreal_laboratory_collaboration }
+		x = 0
+		y = 1
+		relative_position_id = CAN_montreal_laboratory_collaboration
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 35
+		}
+
+		available = {
+			CAN = { is_puppet = no }
+		}
+
+		completion_reward = {
+			CAN = {
+   				add_ideas = CAN_adrian
+    		}
+		}
+	
+	}
+
+	focus = {
 		id = CAN_the_plan
 		icon = GFX_goal_generic_air_fighter
 		prerequisite = { focus = CAN_shadow_factories }
@@ -2798,7 +2824,6 @@ focus_tree = {
 		id = CAN_turner_valley_oilfield
 		icon = GFX_goal_generic_oil_refinery
 		prerequisite = { focus = CAN_supply_the_empire }
-		x = 1
 		y = 1
 		relative_position_id = CAN_supply_the_empire
 
