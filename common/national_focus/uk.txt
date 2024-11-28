@@ -4279,29 +4279,24 @@ focus_tree = {
 	focus = {
 		id = ENG_british_invasion_of_iran
 		icon = GFX_focus_generic_attack_iran
-		prerequisite = { focus = ENG_anglo_soviet_agreement }
+		prerequisite = { focus = ENG_war_cabinet }
 		available = {
+			if = {
+				date > 1941.9.1
+			}
 			SOV = { has_war_with = GER }
 			NOT = {
 				SOV = {
 					has_completed_focus = SOV_preemptive_invasion_of_iran
 				}
 			}
-			446 = {
-				NOT = {
-					CONTROLLER = {
-						tag = ENG
-						is_in_faction_with = ENG		
-					}	
-				}
-			}
 		}
 
 		available_if_capitulated = yes
 
-		x = 0
+		x = 6
 		y = 1
-		relative_position_id = ENG_anglo_soviet_agreement
+		relative_position_id = ENG_war_cabinet
 		cost = 5
 		ai_will_do = {
 			factor = 1
@@ -4472,7 +4467,7 @@ focus_tree = {
 	focus = {
 		id = ENG_soviet_lend_lease
 		icon = GFX_focus_generic_treaty
-		prerequisite = { focus = ENG_british_invasion_of_iran }
+		prerequisite = { focus = ENG_anglo_soviet_agreement }
 		available = {
 		}
 
@@ -4480,7 +4475,7 @@ focus_tree = {
 
 		x = 0
 		y = 1
-		relative_position_id = ENG_british_invasion_of_iran
+		relative_position_id = ENG_anglo_soviet_agreement
 		cost = 5
 		ai_will_do = {
 			factor = 1
