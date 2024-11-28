@@ -4277,6 +4277,85 @@ focus_tree = {
 	}
 
 	focus = {
+		id = ENG_dday
+		icon = GFX_USA_fight_fascist_with_fire
+		prerequisite = { focus = ENG_war_cabinet }
+		available = {
+			if = {
+				date > 1944.1.1
+			}
+			SOV = { has_war_with = GER }
+		}
+
+		available_if_capitulated = yes
+
+		x = -6
+		y = 1
+		relative_position_id = ENG_war_cabinet
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}	
+		completion_reward = {
+			hidden_effect = {
+				every_country = {
+					scoped_sound_effect = "sp_dday_cooked"
+				}
+			}
+			division_template = {
+				name = "American Special Forces"
+				division_names_group = USA_MAR_01
+			
+				regiments = {
+					marine = { x = 0 y = 0 }
+					marine = { x = 0 y = 1 }
+					marine = { x = 0 y = 2 }
+					marine = { x = 1 y = 0 }
+					marine = { x = 1 y = 1 }
+					marine = { x = 1 y = 2 }
+					marine = { x = 2 y = 0 }
+					marine = { x = 2 y = 1 }
+					marine = { x = 2 y = 2 }
+					marine = { x = 0 y = 3 }
+					marine = { x = 1 y = 3 }
+					pack_artillery_brigade = { x = 3 y = 0 }
+					pack_artillery_brigade = { x = 3 y = 1 }
+					pack_artillery_brigade = { x = 3 y = 2 }
+					pack_artillery_brigade = { x = 3 y = 3 }
+					pack_artillery_brigade = { x = 4 y = 0 }
+					pack_antitank_brigade = { x = 4 y = 1 }
+					pack_antitank_brigade = { x = 4 y = 2 }
+					pack_antitank_brigade = { x = 4 y = 3 }
+				}
+				support = {
+					hq_company = { x = 0 y = 0 } 
+					engineer = { x = 0 y = 1 }   
+					recon = { x = 0 y = 2 }
+					logistics_company_mot  = { x = 0 y = 3 }
+					anti_air = { x = 1 y = 0 }
+					signal_company = { x = 1 y = 1}
+				}
+			}
+			126 = {
+				for_loop_effect = {
+					end = 12
+					create_unit = {
+						division = "name = \"American Special Forces\" division_template = \"American Special Forces\" start_experience_factor = 2"
+						owner = ENG
+					}
+				}
+			}
+			custom_effect_tooltip = ENG_dday_spawn_in_tt
+			14 = {
+				add_dynamic_modifier = { modifier = ENG_dday_entrenchment }
+			}
+			15 = {
+				add_dynamic_modifier = { modifier = ENG_dday_entrenchment }
+			}
+		}
+	}
+
+	focus = {
 		id = ENG_british_invasion_of_iran
 		icon = GFX_focus_generic_attack_iran
 		prerequisite = { focus = ENG_war_cabinet }
@@ -4302,11 +4381,6 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
-			hidden_effect = {
-				every_country = {
-					scoped_sound_effect = "sp_dday_cooked"
-				}
-			}
 			hidden_effect = { 
 				every_country = {
 					news_event = generic.33

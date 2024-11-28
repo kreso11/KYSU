@@ -378,6 +378,14 @@ ITA_ethiopia_local_supply = {
 	local_supplies_for_controller = 2.5
 }
 
+ENG_dday_entrenchment = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_SOV_armored_battery
+	
+	dig_in_speed_factor = -0.5
+	max_dig_in_factor = -0.50
+}
 
 SOV_defend_city = {
 	enable = { always = yes }
