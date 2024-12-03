@@ -772,14 +772,6 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			252 = {
-				add_extra_state_shared_building_slots = 5
-				add_building_construction = {
-					type = industrial_complex
-					level = 5
-					instant_build = yes
-				}
-			}
 		}
 	}
 	
@@ -808,18 +800,10 @@ focus_tree = {
 				}
 			}
 			219 = {
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 4
-					instant_build = yes
-				}
-			}
-			195 = {
-				add_extra_state_shared_building_slots = 4
-				add_building_construction = {
-					type = industrial_complex
-					level = 4
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -943,12 +927,12 @@ focus_tree = {
 			}
  			add_resource = {
 				type = rubber
-				amount = 200
+				amount = 100
 				state = 229
 			}
 	 		add_resource = {
 				type = rubber
-				amount = 200
+				amount = 100
 				state = 232
 			}
 		}
@@ -1010,12 +994,12 @@ focus_tree = {
 		completion_reward = {
 			add_resource = {
 				type = aluminium
-				amount = 200
+				amount = 100
 				state = 400
 			}
 			add_resource = {
 				type = aluminium
-				amount = 300
+				amount = 200
 				state = 398
 			}
  			add_resource = {
@@ -1395,22 +1379,6 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			265 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-			245 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
 		}
 	}
 	
@@ -1433,22 +1401,6 @@ focus_tree = {
 				}
 			}
 			248 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-			254 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-			219 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
@@ -1510,10 +1462,10 @@ focus_tree = {
 				}
 			}
 			653 = {
-				add_extra_state_shared_building_slots = 4
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 4
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -3391,6 +3343,8 @@ focus_tree = {
 				idea = SOV_the_road_of_life_ns
 				days = 730
 			}
+			add_offsite_building = { type = industrial_complex level = 10 }
+			add_offsite_building = { type = arms_factory level = 10 }
 		}
 	}
 	
@@ -7096,7 +7050,7 @@ focus_tree = {
 		completion_reward = {
 			# add_ideas = progress_cult_focus
 			SOV_agitprop_modifier_tt = yes # tooltip
-			add_to_variable = { SOV_agitprop_research_speed_factor = 0.10 tooltip = research_speed_factor_tt }
+			add_to_variable = { SOV_agitprop_research_speed_factor = 0.05 tooltip = research_speed_factor_tt }
 			add_tech_bonus = {
 				name = CAN_cmp_truck
 				ahead_reduction = 0.5
@@ -8091,9 +8045,15 @@ focus_tree = {
 
 		completion_reward = {
 			# add_to_variable = { SOV_the_red_army_cas_damage_reduction = 0.05 }
-			#add_to_variable = { SOV_the_red_army_max_dig_in = 1 }
-			add_to_variable = { SOV_the_red_army_dig_in_speed_factor = 0.1 }
-			custom_effect_tooltip = SOV_experts_in_camouflage_ns_tt
+			# add_to_variable = { SOV_the_red_army_max_dig_in = 1 }
+			# add_to_variable = { SOV_the_red_army_dig_in_speed_factor = 0.1 }
+			# custom_effect_tooltip = SOV_experts_in_camouflage_ns_tt
+			add_tech_bonus = {
+				name = doc_bonus
+				bonus = 0.5
+				uses = 2
+				category = infantry_weapons
+			}	
 		}
 	}
 	
@@ -8745,72 +8705,72 @@ focus_tree = {
 		}
 	}
 
-	focus = {
-		id = SOV_fighter_effort
-		icon = GFX_focus_SOV_aviation_cult
-		available = {
-			OR = {
-				date > 1939.1.1
-			}
-		}
-		prerequisite = { focus = SOV_transpolar_flights }
-		x = -4
-		y = 1
-		relative_position_id = SOV_transpolar_flights
-		cost = 3
-
-		available = {
-
-		}
-		
-		search_filters = {}
-
-		completion_reward = {
-			air_experience = 75
-			add_tech_bonus = {
-				name = fighter_bonus
-				bonus = 0.75
-				uses = 1
-				technology = improved_small_airframe
-			}
-		}
-	}
-
-	focus = {
-		id = SOV_fighter_effort2
-		icon = GFX_SOV_fighter_designer
-		prerequisite = { focus = SOV_fighter_effort }
-		x = 0
-		y = 1
-		relative_position_id = SOV_fighter_effort
-		cost = 3
-		ai_will_do = {
-			factor = 0.25
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			add_tech_bonus = {
-				name = fighter_bonus
-				bonus = 0.5
-				uses = 1
-				category = light_fighter
-		}
-			add_tech_bonus = {
-				name = fighter_bonus
-				bonus = 0.5
-				uses = 1
-				category = light_fighter
-	}
-			add_tech_bonus = {
-				name = fighter_bonus
-				bonus = 0.5
-				uses = 1
-				category = cat_heavy_fighter
-			}
-		}
-	}
+    #	focus = {
+    #		id = SOV_fighter_effort
+    #		icon = GFX_focus_SOV_aviation_cult
+    #		available = {
+    #			OR = {
+    #				date > 1939.1.1
+    #			}
+    #		}
+    #		prerequisite = { focus = SOV_transpolar_flights }
+    #		x = -4
+    #		y = 1
+    #		relative_position_id = SOV_transpolar_flights
+    #		cost = 3
+    #
+    #		available = {
+    #
+    #		}
+    #		
+    #		search_filters = {}
+    #
+    #		completion_reward = {
+    #			air_experience = 75
+    #			add_tech_bonus = {
+    #				name = fighter_bonus
+    #				bonus = 0.75
+    #				uses = 1
+    #				technology = improved_small_airframe
+    #			}
+    #		}
+    #	}
+    #
+    #	focus = {
+    #		id = SOV_fighter_effort2
+    #		icon = GFX_SOV_fighter_designer
+    #		prerequisite = { focus = SOV_fighter_effort }
+    #		x = 0
+    #		y = 1
+    #		relative_position_id = SOV_fighter_effort
+    #		cost = 3
+    #		ai_will_do = {
+    #			factor = 0.25
+    #		}
+    #
+    #		available_if_capitulated = yes
+    #
+    #		completion_reward = {
+    #			add_tech_bonus = {
+    #				name = fighter_bonus
+    #				bonus = 0.5
+    #				uses = 1
+    #				category = light_fighter
+    #		}
+    #			add_tech_bonus = {
+    #				name = fighter_bonus
+    #				bonus = 0.5
+    #				uses = 1
+    #				category = light_fighter
+    #	}
+    #			add_tech_bonus = {
+    #				name = fighter_bonus
+    #				bonus = 0.5
+    #				uses = 1
+    #				category = cat_heavy_fighter
+    #			}
+    #		}
+    #	}
 	
 	# focus = {
 	# 	id = SOV_fighter_effort3
