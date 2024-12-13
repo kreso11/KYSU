@@ -19,6 +19,8 @@
   ROM_continue_integration_efforts:0 "Continue Integration Efforts"
   ROM_finalize_incorporation:0 "Finalize Transnistria's Incorporation"
   ROM_modern_cruisers:0 "Modern Cruisers"
+  ROM_develop_tanks:0 "Further Development"
+  ROM_modernisation_effort:0 "Upgrade Programme"
 
   #### IDEAS ####
   ROM_resita75:0 "Resita 75mm AT Gun"

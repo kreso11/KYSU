@@ -428,17 +428,7 @@ focus_tree = {
 		}
 
 		available = {
-			OR = {
-				NOT = {
-					controls_state = 77
-				}
-				NOT = {
-					controls_state = 76
-				}
-				NOT = {
-					controls_state = 78
-				}
-			}
+			date > 1940.8.1
 		}
 
 		cancel_if_invalid = yes
@@ -463,12 +453,6 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
-		}
-
-		available = {
-			NOT = {
-				controls_state = 77
-			}
 		}
 
 		cancel_if_invalid = yes
@@ -496,12 +480,6 @@ focus_tree = {
 		relative_position_id = ROM_national_humiliation
 
 		cost = 5
-
-		available = {
-			NOT = {
-				controls_state = 76
-			}
-		}
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -597,15 +575,6 @@ focus_tree = {
 
 		ai_will_do = {
 			factor = 1
-		}
-
-		available = {
-			NOT = {
-				controls_state = 78
-				controls_state = 766
-				controls_state = 80
-			}
-			has_country_flag = bessarabia_ceded
 		}
 
 		bypass = {
@@ -1357,6 +1326,19 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = DOD_romania.120
+
+			IF = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				custom_effect_tooltip = available_mio_tt
+				mio:ROM_malaxa_organization = {
+					add_mio_funds = 3000
+				}
+			}
+			else = {
+				custom_effect_tooltip = available_designer
+			}
 		}
 	}
 
@@ -1368,7 +1350,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = ROM_civil_works
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1417,7 +1399,7 @@ focus_tree = {
 		y = 4
 		relative_position_id = ROM_civil_works
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1927,7 +1909,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_revise_the_constitution
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2281,7 +2263,7 @@ focus_tree = {
 	focus = {
 		id = ROM_expand_the_air_force
 		icon = GFX_goal_generic_build_airforce
-		x = 28
+		x = 29
 		y = 0
 
 		cost = 10
@@ -3244,7 +3226,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_army_maneuvers
 
-		cost = 5
+		cost = 1
 
 		ai_will_do = {
 			factor = 9
@@ -3436,6 +3418,65 @@ focus_tree = {
 	}
 
 	focus = {
+		id = ROM_develop_tanks
+		icon = GFX_goal_HUN_tanks
+		prerequisite = { focus = ROM_acquire_modern_tanks }
+		x = 2
+		y = 1
+		relative_position_id = ROM_acquire_modern_tanks
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 40
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_tech_bonus = {
+				name = HUN_develop_tanks
+				bonus = 0.75
+				uses = 1
+				category = cat_light_armor
+			}
+		}
+	}
+	
+	focus = {
+		id = ROM_modernisation_effort
+		icon = GFX_HUN_modernize_our_armoured_battalions
+		prerequisite = { focus = ROM_develop_tanks }
+		x = 0
+		y = 1
+		relative_position_id = ROM_develop_tanks
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 40
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		complete_tooltip = {
+
+		}
+
+		completion_reward = {
+			add_ideas = HUN_assault_gun_idea
+		}
+	}
+
+	focus = {
 		id = ROM_mobile_tank_destroyers
 		icon = GFX_goal_generic_build_tank
 		prerequisite = { focus = ROM_acquire_modern_tanks }
@@ -3525,7 +3566,7 @@ focus_tree = {
 	focus = {
 		id = ROM_expand_the_galati_shipyards
 		icon = GFX_ROM_expand_the_galati_shipyards
-		x = 27
+		x = 28
 		y = 0
 
 		offset = {

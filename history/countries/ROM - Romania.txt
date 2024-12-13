@@ -132,6 +132,9 @@ set_popularities = {
 		neutrality = 43
 	}
 }
+##hun imports kreso
+recruit_character = ROM_iván_hindy
+recruit_character = ROM_károly_beregfy
 
 recruit_character = ROM_gheorghe_tatarescu
 recruit_character = ROM_constantin_ion_parhon

@@ -1657,20 +1657,15 @@ ideas = {
 		SOV_stakhanovite_movement = {
 
 			picture = SOV_stakhanovite_movement
-
+	
 			removal_cost = -1
 			
 			allowed = {
 				always = no # Added via focus
 			}
-
-			allowed_civil_war = {
-				original_tag = SOV
-			}
 			
 			modifier = {
-				industrial_capacity_factory = 0.03
-				industrial_capacity_dockyard = 0.03
+				stability_weekly = 0.001
 			}
 		}
 

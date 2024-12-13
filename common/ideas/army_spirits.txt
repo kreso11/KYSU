@@ -97,6 +97,9 @@ ideas = {
 			ledger = army
 			visible = {
 				if = {
+					has_war = no
+				}
+				if = {
 					limit = {
 						has_government = democratic
 					}

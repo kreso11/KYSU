@@ -1505,6 +1505,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
+			remove_ideas = SOV_stakhanovite_movement
 			add_ideas = tot_economic_mobilisation
 			# add_ideas = SOV_war_mob
 			SOV_eco_modifier_tt = yes # tooltip
@@ -7005,10 +7006,11 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			# add_ideas = SOV_stakhanovite
+			add_ideas = SOV_stakhanovite_movement
+
 			SOV_agitprop_modifier_tt = yes # tooltip
+
 			add_to_variable = { SOV_agitprop_mobilization_speed = 0.5 tooltip = mobilization_speed_tt }
-			add_to_variable = { SOV_agitprop_stability_weekly = 0.001 tooltip = stability_weekly_tt }	
 		}
 	}
 	
