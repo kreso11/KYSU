@@ -1161,7 +1161,7 @@ focus_tree = {
 				limit = {
 					date < 1937.8.1
 				}   
-				add_stability = 0.3
+				add_stability = 0.25
 			}
 			else_if = {
 				limit = {
@@ -4423,7 +4423,7 @@ focus_tree = {
 		completion_reward = {
 			add_to_variable = { SOV_the_politburo_communism_drift = 0.05 }
 			add_to_variable = { SOV_the_politburo_drift_defence_factor = 0.05 } 
-			add_to_variable = { SOV_the_politburo_defensive_war_stability_factor = 0.25 } 
+			add_to_variable = { SOV_the_politburo_defensive_war_stability_factor = 0.10 } 
 			custom_effect_tooltip = SOV_socialism_in_one_country_ns_tt
 
 			add_political_power = 15
@@ -6929,7 +6929,7 @@ focus_tree = {
 			SOV_agitprop_modifier_tt = yes # tooltip
 			add_to_variable = { SOV_agitprop_production_factory_max_efficiency_factor = 0.10 tooltip = production_factory_max_efficiency_factor_tt }
 			add_to_variable = { SOV_soviet_economy_production_factory_start_efficiency_factor = 0.05 tooltip = production_factory_start_efficiency_factor_tt }
-			add_to_variable = { SOV_agitprop_stability_factor = 0.2 tooltip = stability_factor_tt }
+			add_to_variable = { SOV_agitprop_stability_factor = 0.1 tooltip = stability_factor_tt }
 
 			custom_effect_tooltip = unlock_propaganda_campaign_tt
 			unlock_decision_tooltip = SOV_propaganda_for_the_motherland

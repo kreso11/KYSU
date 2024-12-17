@@ -47,6 +47,7 @@ focus_tree = {
 		completion_reward = {
 			# add_political_power = 150
 			add_ideas = war_economy
+			add_ideas = ITA_no_asia_buff
 		}
 	}
 
@@ -2619,8 +2620,6 @@ focus_tree = {
 		cost = 5
 		
 		completion_reward = {
-			add_ideas = ITA_no_asia_buff
-
 			GER = { country_event = germany.104 }
 			unlock_decision_tooltip = ITA_demand_tunisia			
 		}

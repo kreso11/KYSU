@@ -4701,9 +4701,9 @@ focus_tree = {
 					POL = { transfer_state = 72 } # Give Poland Zaolzie
 				}
 				HUN = {
-					transfer_state = 70
-					transfer_state = 71
-					transfer_state = 73
+					# transfer_state = 70
+					# transfer_state = 71
+					# transfer_state = 73
 					GER = {
 						annex_country = { target = CZE }
 						add_to_faction = HUN

@@ -348,25 +348,25 @@ on_actions = {
 				309 = { set_compliance = 20 }
 
 				# DEI - go to australia
-				AST = {
+				ENG = {
 					transfer_state = 672
-					672 = { set_compliance = 20 }
+					672 = { set_compliance = 30 }
 					transfer_state = 334
-					334 = { set_compliance = 20 }
+					334 = { set_compliance = 30 }
 					transfer_state = 335
-					335 = { set_compliance = 20 }
+					335 = { set_compliance = 30 }
 					transfer_state = 667
-					667 = { set_compliance = 20 }
+					667 = { set_compliance = 30 }
 					transfer_state = 673
-					673 = { set_compliance = 20 }
+					673 = { set_compliance = 30 }
 					transfer_state = 668
-					668 = { set_compliance = 20 }
+					668 = { set_compliance = 30 }
 					transfer_state = 669
-					669 = { set_compliance = 20 }
+					669 = { set_compliance = 30 }
 					transfer_state = 738
-					738 = { set_compliance = 20 }
+					738 = { set_compliance = 30 }
 				}
-				AST = { annex_country = { target = INS transfer_troops = yes } }
+				ENG = { annex_country = { target = INS transfer_troops = yes } }
 
 				GER = {
 					transfer_state = 35
@@ -553,7 +553,7 @@ on_actions = {
 				# 	transfer_state = 8
 				# }
 				# ENG = { annex_country = { target = BEL transfer_troops = no } }
-				SAF = {
+				ENG = {
 					transfer_state = 295
 					transfer_state = 538
 					transfer_state = 718
@@ -858,6 +858,8 @@ on_actions = {
 				GER = {
 					transfer_state = 102
 					transfer_state = 853
+					transfer_state = 45
+					transfer_state = 764
 				}
 				ITA = {
 					transfer_state = 109
@@ -868,10 +870,6 @@ on_actions = {
 					transfer_state = 105
 					transfer_state = 108
 					transfer_state = 802
-				}
-				HUN = {
-					transfer_state = 45
-					transfer_state = 764
 				}
 				if = { # check if bulgaria exist
 					limit = {
@@ -929,6 +927,7 @@ on_actions = {
 					transfer_state = 146
 					transfer_state = 147
 				}
+				SWE = { annex_country = { target = FIN transfer_troops = yes } }
 			}
 		}	
 	}
